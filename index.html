@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>Pricing Table</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background: #f0f4f8;
+margin: 0;
+padding: 2rem;
+text-align: center;
+}
+
+.pricing-section {
+color: #333;
+margin-bottom: 2rem;
+}
+
+.pricing-container {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+flex-wrap: wrap;
+}
+
+.card {
+background: white;
+padding: 2rem;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+width: 250px;
+transition: transform 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-10px) scale(1.05);
+}
+
+.featured {
+border: 2px solid #4caf50;
+background: #e8f5e9;
+transform: scale(1.03);
+}
+
+.price {
+font-size: 1.8rem;
+color: #4caf50;
+margin: 1rem 0;
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin-bottom: 1.5rem;
+}
+
+ul li {
+margin: 0.5rem 0;
+color: #555;
+}
+
+button {
+padding: 10px 20px;
+background: #4caf50;
+color: white;
+font-weight: bold;
+letter-spacing: 0.5px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: transform 0.3s ease;
+}
+
+button:hover {
+background: #388e3c;
+}
+
+@media (max-width: 768px) {
+.pricing-container {
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+}
+</style>
+</head>
+<body>
+<section class="pricing-section">
+<h1>Choose the Plan</h1>
+<div class="pricing-container">
+<div class="card">
+<h2>🧱 Basic</h2>
+<p class="price">₹199/month</p>
+<ul>
+<li>✔️ 2 Website</li>
+<li>✔️ 20 GB Storage</li>
+<li>❌ No Support</li>
+</ul>
+<button>Select</button>
+</div>
+
+<div class="card featured">
+<h2>🚀 Standard</h2>
+<p class="price">₹499/month</p>
+<ul>
+<li>✔️ 8 Website</li>
+<li>✔️ 80 GB Storage</li>
+<li>✔️ Email Support</li>
+</ul>
+<button>Select</button>
+</div>
+
+<div class="card">
+<h2>👑 Premium</h2>
+<p class="price">₹999/month</p>
+<ul>
+<li>✔️ unlimited Website</li>
+<li>✔️ 200 GB Storage</li>
+<li>✔️ 24/7 Support</li>
+</ul>
+<button>Select</button>
+</div>
+</div>
+<footer style="margin-top: 2rem; color: #888;">© 2025 Akshaya | Pricing Plans UI</footer>
+</body>
+</html>
